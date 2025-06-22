@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shopping Virtual - Lojas Customizáveis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .loja {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .loja:hover {
+      transform: scale(1.05);
+    }
+
+    .loja img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+    }
+
+    .loja h3 {
+      margin: 10px;
+    }
+
+    /* Personalizações individuais */
+    .moda    { background: #bbcef5; color: #2721dc; }
+    .eletron  { background: #ffcece; color: #c60303; }
+    .livros   { background: #ffedb3; color: #c8be04; }
+    .esporte  { background: #affeb5; color: #11cd1b; }
+    .alimento { background: #ffbbf9; color: #bf0c9e; }
+    .brinq    { background: #c4fffe; color: #1ac4e2; }
+  </style>
+</head>
+<body>
+
+  <h1>🛍️ Shopping Virtual - Customize as Lojas</h1>
+
+  <div class="grid">
+    <div class="loja moda" onclick="mostrarLoja('Games')">
+      <img src= "img/Games.jpg" alt="Games">
+      <h3>Games</h3>
+    </div>
+
+    <div class="loja eletron" onclick="mostrarLoja('Sapatos')">
+      <img src="img/Sapatos.jpg" alt="Sapatos">
+      <h3>Sapatos</h3>
+    </div>
+
+    <div class="loja livros" onclick="mostrarLoja('Fitness')">
+      <img src="img/Fitness.jpg" alt="Fitness">
+      <h3>Fitness</h3>
+    </div>
+
+    <div class="loja esporte" onclick="mostrarLoja('Infantil')">
+      <img src="img/Infantil.jpg" alt="Infantil">
+      <h3>Infantil</h3>
+    </div>
+
+    <div class="loja alimento" onclick="mostrarLoja('Ferramentas')">
+      <img src="img/Ferramentas.jpg" alt="Ferramentas">
+      <h3>Ferramentas</h3>
+    </div>
+
+    <div class="loja brinq" onclick="mostrarLoja('Saúde')">
+      <img src="img/Saúde.jpg" alt="Saúde">
+      <h3>Saúde</h3>
+    </div>
+  </div>
+
+  <script>
+    function mostrarLoja(nome) {
+      alert(`Você acessou a loja ${nome}. Aproveite as ofertas!`);
+    }
+  </script>
+
+</body>
+</html>
